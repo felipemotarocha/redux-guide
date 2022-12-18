@@ -33,15 +33,13 @@ function Header() {
     <Styles.Container>
       <Styles.Logo>Redux Shopping</Styles.Logo>
       <Styles.Buttons>
-        <div>Login</div>
-        <div onClick={handleCartClick}>Carrinho</div>
         {currentUser ? (
           <div onClick={handleLogoutClick}>Sair</div>
         ) : (
           <div onClick={handleLoginClick}>Login</div>
         )}
 
-        <div>Carrinho</div>
+        <div onClick={handleCartClick}>Carrinho</div>
       </Styles.Buttons>
 
       <Cart isVisible={cartIsVisible} setIsVisible={setCartIsVisible} />
