@@ -1,8 +1,8 @@
 // Styles
-import * as Styles from "./cart.styles";
+import * as Styles from "./styles";
 
-const Cart = ({ isVisible }) => {
-  const handleEscapeAreaClick = () => {};
+const Cart = ({ isVisible, setIsVisible }) => {
+  const handleEscapeAreaClick = () => setIsVisible(false);
 
   return (
     <Styles.CartContainer isVisible={isVisible}>
