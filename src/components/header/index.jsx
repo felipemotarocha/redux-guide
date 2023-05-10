@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 
 // Components
@@ -8,6 +8,9 @@ import Cart from "../cart/index";
 import * as Styles from "./styles";
 import { loginUser, logoutUser } from "../../redux/user/actions";
 import { selectProductsCount } from "../../redux/cart/cart-selectors";
+
+// Utilities
+import { loginUser, logoutUser } from "../../redux/user/actions";
 
 function Header() {
   const [cartIsVisible, setCartIsVisible] = useState(false);
